@@ -49,7 +49,7 @@ class BuildSpecCommand extends Command
             ->loadSpec()
             ->export($this->getOutputPath());
 
-        $this->info('API Specification successfully built.');
+        $this->info('OpenAPI Specification successfully built.');
     }
 
     private function getOutputPath()

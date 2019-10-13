@@ -104,7 +104,7 @@ class ApiSchema
                 $schema
             );
         } catch (Exception $e) {
-            throw new Exception('Unable to create ' . $this->getTable() . ' schema.', 1);
+            throw new Exception('Unable to create schema.', 1);
         }
     }
 

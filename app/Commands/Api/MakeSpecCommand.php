@@ -20,7 +20,7 @@ class MakeSpecCommand extends Command
      * @var string
      */
     protected $signature = 'make:oas
-                            {version : OAS Version}';
+                             {version : Version of OAS}';
 
     /**
      * The console command description.
@@ -55,6 +55,6 @@ class MakeSpecCommand extends Command
         }
 
         $this->files->copyDirectory(__DIR__ . '/stubs', $path);
-        $this->info('Successfully created OpenAPI Specification scaffold version ' . $version);
+        $this->info('Successfully created specification.');
     }
 }

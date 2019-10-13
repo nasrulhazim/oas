@@ -64,12 +64,16 @@ class ApiSpecification
      */
     public function export($path)
     {
-        file_put_contents(
-            $path,
-            json_encode(
-                $this->getSpecification()
-            )
-        );
+        try {
+            file_put_contents(
+                $path,
+                json_encode(
+                    $this->getSpecification()
+                )
+            );
+        } catch (Exception $e) {
+            throw new Exception('Unable to export specification.', 1);
+        }
 
         return $this;
     }

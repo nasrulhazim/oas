@@ -12,8 +12,8 @@ class MakeSchemaCommand extends Command
      * @var string
      */
     protected $signature = 'make:schema
+                            {version : Version of OAS}
                             {table : Targeted table}
-                            {version : OAS Version}
                             {--connection=sqlite : Database connection}';
 
     /**
@@ -45,6 +45,6 @@ class MakeSchemaCommand extends Command
             ->setTable($table)
             ->generate();
 
-        $this->info('Successfully created OpenAPI Specification schema version ' . $version . ' for table ' . $table . '.');
+        $this->info('Successfully created schema.');
     }
 }
