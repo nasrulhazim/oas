@@ -1,0 +1,10 @@
+[
+    {
+        "url": "https://api.domain.com",
+        "description": "Production"
+    },
+    {
+        "url": "https://api-sandbox.domain.com",
+        "description": "Sandbox"
+    },
+]
