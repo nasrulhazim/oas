@@ -1,0 +1,15 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32",
+            "description": "Error code as listed in RFC2616 Status Code Definitions"
+        },
+        "message": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Description of error"
+        }
+    }
+}

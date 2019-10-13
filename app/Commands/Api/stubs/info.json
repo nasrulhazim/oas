@@ -1,0 +1,14 @@
+{
+    "title": "OpenAPI Specification",
+    "x-logo":
+    {
+        "url": "img/oas.svg"
+    },
+    "description": "The APIs enable you to interact with your applications.",
+    "contact":
+    {
+        "name": " Open API Team",
+        "email": "openapi@domain.com"
+    },
+    "version": "1.0"
+}

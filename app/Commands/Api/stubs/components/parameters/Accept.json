@@ -1,0 +1,15 @@
+{
+    "name": "Accept",
+    "in": "header",
+    "description": "Define Accept header to request specific version of API",
+    "required": true,
+    "style": "simple",
+    "explode": false,
+    "schema": {
+        "type": "string",
+        "enum": [
+            "application\/vnd.v1+json"
+        ],
+        "default": "application\/vnd.v1+json"
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "get": {
+        "tags": [
+            "Getting Started"
+        ],
+        "summary": "a welcome",
+        "description": "To make a request, you must include `Accept` header to request a specific version.\n``` Accept: application\/vnd.v1+json ```\nYou may use API client tool to start consuming the OpenAPI.",
+        "operationId": "Welcome",
+        "parameters": [
+            {
+                "$ref": "#\/components\/parameters\/Accept"
+            }
+        ],
+        "responses": {
+            "200": {
+                "description": "Successful response",
+                "content": {
+                    "application\/json": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "api": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "description": "Current version of API"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "maxLength": 255,
+                                    "description": "Name of the OpenAPI"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "default": {
+                "$ref": "#\/components\/responses\/default"
+            }
+        }
+    }
+}
