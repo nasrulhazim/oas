@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/nasrulhazim/oas.svg?branch=master)](https://travis-ci.org/nasrulhazim/oas)
 
 OAS is OpenAPI Specification generator. It will help to simplify generate your OAS from given database.
 
